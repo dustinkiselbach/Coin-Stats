@@ -1,0 +1,12 @@
+.coin {
+  padding: 1rem;
+  background-color: $color-primary;
+  color: $color-text-light;
+  @media only screen and(max-width: 1200px ) {
+    height: 100vh;
+  }
+
+  & .btn {
+    width: 15%;
+  }
+}

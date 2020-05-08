@@ -1,0 +1,25 @@
+.coin-detail {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  padding: 2rem;
+  align-items: center;
+  justify-items: start;
+
+  &__logo {
+    height: 10rem;
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+
+  &__change {
+    span {
+      color: #eee;
+    }
+  }
+
+  &__title {
+  }
+
+  &__list {
+  }
+}

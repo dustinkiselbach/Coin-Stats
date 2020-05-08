@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Variables
+$color-primary: #264b77;
+$color-primary-dark: #00243f;
+$color-primary-darker: #001c31;
+$color-secondary: #3c5b74;
+$color-grey: #a3acb1;
+$color-text: black;
+$color-text-light: #eee;
+$color-success: #5cb85c;
+$color-warning: #d9534f;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: $color-text-light;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+// reusables
+.title-primary {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+.btn {
+  border: 1px solid rgba($color-primary-dark, 0.5);
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: $color-primary-dark;
+  color: #eee;
+  &:hover {
+    background-color: $color-primary-darker;
+  }
+}
+
+.txtgreen {
+  color: $color-success;
+}
+
+.txtred {
+  color: $color-warning;
+}

@@ -1,0 +1,5 @@
+export const GET_TICKER = 'GET_TICKER'
+export const GET_TICKER_HISTORY = 'GET_TICKER_HISTORY'
+export const SET_LOADING = 'SET_LOADING'
+export const GET_META_DATA = 'GET_META_DATA'
+export const GET_RANKINGS = 'GET_RANKINGS'
