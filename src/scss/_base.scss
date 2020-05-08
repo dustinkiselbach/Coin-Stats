@@ -21,6 +21,20 @@ body {
   font-weight: 300;
 }
 
+html {
+  @media only screen and(max-width: 1200px ) {
+    font-size: 0.9rem;
+  }
+
+  @media only screen and(max-width: 900px ) {
+    font-size: 0.8rem;
+  }
+
+  @media only screen and(max-width: 600px ) {
+    font-size: 0.7rem;
+  }
+}
+
 a {
   text-decoration: none;
   color: $color-text-light;

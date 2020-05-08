@@ -1,24 +1,33 @@
 import React from 'react'
+import classnames from 'classnames'
 
-const CoinBtns = ({ onClick, color }) => {
+const CoinBtns = ({ onClick, metric, color }) => {
+  console.log(metric)
+
   return (
     <div className='coin-btns'>
       <button
-        className='btn'
+        className={classnames('coin-btn btn', {
+          toggled: metric === '1d'
+        })}
         onClick={onClick}
         style={{ backgroundColor: color }}
       >
         1d
       </button>
       <button
-        className='btn'
+        className={classnames('coin-btn btn', {
+          toggled: metric === '30d'
+        })}
         onClick={onClick}
         style={{ backgroundColor: color }}
       >
         30d
       </button>
       <button
-        className='btn'
+        className={classnames('coin-btn btn', {
+          toggled: metric === '365d'
+        })}
         onClick={onClick}
         style={{ backgroundColor: color }}
       >

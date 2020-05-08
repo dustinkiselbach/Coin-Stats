@@ -37,6 +37,10 @@ const Home = () => {
       ) : (
         <Spinner />
       )}
+      <small>
+        rankings based on total volume today, this app is a prototype and
+        shouldn't be used for trading
+      </small>
     </section>
   )
 }

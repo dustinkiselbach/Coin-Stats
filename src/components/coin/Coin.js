@@ -10,6 +10,7 @@ import moment from 'moment'
 const Coin = ({ match }) => {
   const [date] = useState(
     moment()
+      .utc()
       .subtract(1, 'days')
       .format('YYYY-MM-DDTHH')
   )
@@ -50,10 +51,12 @@ const Coin = ({ match }) => {
 
     if (interval === 'h') {
       return moment()
+        .utc()
         .subtract(num, 'hour')
         .format('YYYY-MM-DD')
     } else {
       return moment()
+        .utc()
         .subtract(num, 'days')
         .format('YYYY-MM-DDTHH')
     }
@@ -83,7 +86,7 @@ const Coin = ({ match }) => {
           <Fragment>
             <CoinDetail ticker={ticker} metric={metric} />
             <LineChart tickerHistory={tickerHistory} color={color} />
-            <CoinBtns onClick={onClick} color={color} />
+            <CoinBtns onClick={onClick} color={color} metric={metric} />
             <CoinInfo metaData={metaData} />{' '}
           </Fragment>
         )}

@@ -1,9 +1,14 @@
 .coin-btns {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
   padding: 1rem;
+  grid-template-columns: repeat(3, 33.33%);
+  justify-items: center;
+  & .coin-btn {
+    width: 50%;
+    border-radius: 10px;
+  }
 
-  & .btn {
-    color: $color-text;
+  & .toggled {
+    border: 2px solid rgba($color-primary-darker, 0.8);
   }
 }
