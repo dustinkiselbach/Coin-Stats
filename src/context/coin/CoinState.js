@@ -39,7 +39,7 @@ const CoinState = props => {
     setLoading()
     try {
       const res = await axios.get(
-        `https://api.nomics.com/v1/currencies/sparkline?key=5bf4f163969b105d5fa78035c95a3e10&ids=${id.toUpperCase()}&start=${from}%3A00%3A00-07:00`
+        `https://api.nomics.com/v1/currencies/sparkline?key=5bf4f163969b105d5fa78035c95a3e10&ids=${id.toUpperCase()}&start=${from}%3A00%3A00Z`
       )
       dispatch({ type: GET_TICKER_HISTORY, payload: res.data })
     } catch (err) {
